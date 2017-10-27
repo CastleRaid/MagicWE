@@ -60,8 +60,8 @@ class Main extends PluginBase implements Listener {
 					$pos1y = $sender->getFloorY();
 					$pos1z = $sender->getFloorZ();
 					$this->pos1[$sender->getName()] = new Vector3($pos1x, $pos1y, $pos1z);
-					if ($pos1y > self::$MAX_BUILD_HEIGHT || $pos1y < 0) $sender->sendMessage(TextFormat::GOLD . "[MagicWE] Warning: You are above y:" . self::$MAX_BUILD_HEIGHT . " or below y:0");
-					$sender->sendMessage(TextFormat::GREEN . "[MagicWE] Position 1 set as x:" . $pos1x . " y:" . $pos1y . " z:" . $pos1z);
+					if ($pos1y > self::$MAX_BUILD_HEIGHT || $pos1y < 0) $sender->sendMessage(TextFormat::RED . "[MagicWE] Warning: You are above y:" . self::$MAX_BUILD_HEIGHT . " or below y:0");
+					$sender->sendMessage(TextFormat::GREEN . "[MagicWE] Position 1 set as X:" . $pos1x . " y:" . $pos1y . " z:" . $pos1z);
 					return true;
 					break;
 				}
